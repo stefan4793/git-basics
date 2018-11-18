@@ -1,0 +1,50 @@
+yum install git
+git --version
+mkdir Repository
+cd Repository
+git clone https://github.com/stefan4793/git-basics.git
+cd git-basics
+nano myfile1.txt
+git commit -m'myfile1.txt'
+git add myfile1.txt
+ls
+git commit -m 'myfile1.txt'
+git config --global user.name "stefan4793"
+git config --global "stefansarbu@yahoo.com"
+git commit --amend --reset-author
+git commit -m 'myfile1.txt'
+git push
+git checkout -b br1
+nano myfile2.txt
+git commit -a -m 'myfile2.txt'
+ls
+git push
+git add myfile2.txt
+git commit -m'myfile2.txt'
+git push
+mkdir b1
+cd b1
+nano myfile2.txt
+git add myfile2.txt
+git commit -m'myfile2.txt'
+git push
+git checkout b1
+git -b  checkout b1
+git checkout -b b1
+git branch --list
+nano myfile2.txt
+git add .
+git commit -m'my file 2 added'
+git push
+git push -origin b1
+git push origin b1
+git git checkout master
+git checkout master
+git branch
+git branch --list
+cd..
+cd ..
+git merge b1
+git commit -m'merge'
+git push origin master
+history -w ./history_Sarbu_Stefan.txt
